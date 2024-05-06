@@ -1,0 +1,59 @@
+body {
+    font-family: serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fdeaed;
+  }
+  
+  .container {
+    text-align: center;
+    background-color: #ffc0cb;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .poem-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .poem-lines {
+    font-size: 1.2em;
+    line-height: 1.5;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+  .poem-lines.show {
+    opacity: 1;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }  
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ddd;
+  }
+  
+  button:hover {
+    background-color: #ccc;
+  }
+  
